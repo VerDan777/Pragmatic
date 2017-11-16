@@ -1,0 +1,566 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.site-header {
+  padding: 0 25px;
+  height: 85vh;
+  background-image: url("./img/bg-car.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.hero__title {
+  padding: 0 40px;
+  text-align: center;
+  line-height: 2;
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.hero__text {
+  text-align: center;
+  line-height: 1.1;
+  font-size: 0.9rem;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero__link {
+  margin: 30px 0;
+  margin-bottom: 30px;
+  text-align: center;
+  display: block;
+  border-bottom: 1px solid #646669;
+  color: #fff;
+  font-family: "ProximaNovaBold", sans-serif;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.hero__link--button {
+  background-color: #0068d7;
+  margin-bottom: 0;
+  width: 100%;
+  padding: 20px;
+  -webkit-box-shadow: 1px 0px 30px 3px #002b59;
+  box-shadow: 1px 0px 30px 3px #002b59;
+}
+
+.hero__group-input {
+  width: 100%;
+}
+
+.hero__input {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100% !important;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px 10px;
+  border: 1px solid #646669;
+}
+
+.logo {
+  max-width: 180px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.phone {
+  width: 20px;
+  padding-bottom: 5px;
+}
+
+.phone img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-nav {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.features {
+  padding: 0 25px;
+  background-color: #000;
+  padding-bottom: 50px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.features__item {
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #333333;
+}
+
+.features__descripton {
+  display: inline-block;
+}
+
+.features__pic {
+  padding-right: 25px;
+}
+
+.features__title {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.features__text {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+.price {
+  padding: 0 25px;
+  background-color: #000;
+}
+
+.price__header {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.price__title {
+  margin: 0;
+  font-family: "ProximaNovaBold", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.price__text {
+  line-height: 2;
+  font-size: 0.9rem;
+}
+
+.price__list {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  list-style: none;
+  text-align: center;
+}
+
+.price__item {
+  border-bottom: 1px solid #333333;
+  margin-bottom: 50px;
+}
+
+.price__item:last-child {
+  margin: 0;
+}
+
+.price__price {
+  font-family: "ProximaNovaLight", sans-serif;
+  font-size: 2.25rem;
+}
+
+.gallery__bg {
+  background-image: url("./img/audi-bg.png");
+  background-repeat: no-repeat;
+  height: 400px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.conditions {
+  padding: 0 25px;
+  background-image: url("./img/cabin.png");
+  min-height: 1000px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conditions__container {
+  padding-top: 50px;
+  color: #fff;
+}
+
+.conditions__title {
+  margin: 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.conditions__variant {
+  text-align: left;
+}
+
+.conditions__complectation {
+  display: inline-block;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  padding-right: 5px;
+}
+
+.conditions__complectation b {
+  font-weight: bold;
+  font-size: 1.060rem;
+}
+
+.conditions__complectation--active {
+  border-bottom: 1px solid #1691fa;
+  padding-bottom: 16px;
+}
+
+.conditions__complectation:last-child {
+  padding-right: 0;
+}
+
+.conditions__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.conditions__features-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.conditions__features-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.conditions__features-pic img {
+  width: 100%;
+}
+
+.conditions__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.conditions__features-item {
+  padding-bottom: 25px;
+}
+
+.conditions__pic {
+  width: 20px;
+  margin-right: 15px;
+}
+
+.conditions__pic img {
+  width: 100%;
+}
+
+.conditions__price-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.conditions__price-title {
+  color: #000000;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding-bottom: 25px;
+}
+
+.conditions__features-text {
+  color: #000000;
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+.call {
+  padding: 0 25px;
+  background-color: #000;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-image: url("./img/application.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.call--nobg {
+  background-image: none;
+  background-color: #000;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 20px;
+}
+
+.stages {
+  padding: 0 25px;
+  background-image: url("./img/audi-a7.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stages__title {
+  color: #fff;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.stages__step {
+  color: #1691fa;
+  font-size: 2rem;
+  border-bottom: 1px solid #0068d7;
+}
+
+.stages__list {
+  margin: 0;
+  padding: 0;
+}
+
+.stages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stages__description-title {
+  padding: 0;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.stages__text {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.stages__description {
+  padding-left: 30px;
+}
+
+.info {
+  padding: 0 25px;
+  padding-top: 60px;
+  background-image: url("./img/excellence-bg.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.info__container {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.info__container span {
+  font-size: 0.7em;
+}
+
+.info__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.info__pic {
+  width: 64px;
+  margin-right: 15px;
+}
+
+.info__pic img {
+  width: 100%;
+}
+
+.info__description {
+  color: #fff;
+}
+
+.info__main-title {
+  padding-bottom: 50px;
+}
+
+.info__title {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.info__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+.info__question {
+  display: block;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  line-height: 2;
+  font-weight: 300;
+}
+
+.info__question::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: -30px;
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  color: #fff;
+}
+
+.about {
+  padding: 0 25px;
+  background-image: url("./img/taxi.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.about__container {
+  padding-top: 60px;
+  text-align: center;
+  color: #fff;
+}
+
+.about__text {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.about__title {
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__info-title {
+  text-align: left;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #fff;
+}
+
+.about__info-phone {
+  text-align: left;
+}
+
+.about__info-address {
+  text-align: left;
+}
+
+.about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.map {
+  height: 400px;
+}
+
+.site-footer {
+  padding: 75px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #000;
+}
+
+@font-face {
+  font-family:'ProximaNovaBold';src:url("./fonts/Proxima Nova Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family:'ProximaNovaLight';src:url("./fonts/Proxima Nova Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family:'ProximaNovaRegular';src:url("./fonts/Proxima Nova Regular.otf") format("opentype");
+}
