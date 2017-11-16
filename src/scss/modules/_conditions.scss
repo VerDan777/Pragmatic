@@ -1,0 +1,107 @@
+.conditions {
+    // box model
+    padding: 0 25px;
+    background-image: url('./img/cabin.png');
+    min-height: 1000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__container {
+        padding-top: 50px;
+        color: $white;
+    }
+
+    &__title {
+        margin: 0;
+        text-align: center;
+        font-size: 1.1rem;
+        font-family: $Roboto;
+    }
+
+    &__variant {
+        text-align: left;
+    }
+
+    &__complectation {
+        display: inline-block;
+        font-weight: 100;
+        font-family: $Roboto;
+        padding-right: 5px;
+
+        b {
+            font-weight: bold;
+            font-size:  1.060rem;
+        }
+
+        &--active {
+            border-bottom: 1px solid #1691fa;
+            padding-bottom: 16px;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__features-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__features-item {
+        display: flex;
+
+    }
+
+    &__features-pic {
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__features-item {
+        padding-bottom: 25px;
+    }
+
+    &__pic {
+        // box model
+        width: 20px;
+        margin-right: 15px; 
+          img {
+            width: 100%;
+        }
+    }
+
+    &__price-container {
+        background-color: $white;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    &__price-title {
+        color: #000000;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        padding-bottom: 25px;
+    }
+
+    &__features-text {
+        color: #000000;
+        margin-top: 0;
+        padding-left: 20px;
+    }
+}

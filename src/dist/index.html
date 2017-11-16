@@ -4,9 +4,228 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="normalize.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&amp;amp;subset=cyrillic" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css"/>
-  <title>Document</title>
+  <title>Главная</title>
 </head>
 <body>
-  <h1>HELLO!!!</h1>
+  <header class="site-header">
+    <div class="main-nav">
+      <div class="logo"><img src="./img/logo.png" alt="main logo"/></div>
+      <div class="phone"><img src="./img/icons/phone.png" alt="phone icon"/></div>
+    </div>
+    <div class="hero">
+      <h1 class="hero__title">Арендуйте AUDI A6 для работы в бизнес такси</h1>
+      <p class="hero__text">Предоставим автомобиль, поможем пройти экзамены в агрегаторах, выведем на линию уже через 1 день.</p><a class="hero__link" href="#">Узнайте условия аренды</a>
+      <div class="hero__group-input">
+        <input class="hero__input" type="phone" placeholder="Введите свой телефон"/>
+      </div><a class="hero__link hero__link--button" href="#">Узнайте условия аренды Audi A6</a>
+    </div>
+  </header>
+  <section class="features">
+    <div class="features__container">
+      <ul class="features__list">
+                <li class="features__item">
+                  <div class="features__pic"><img class="features__img" src="./img/icons/repair.png" alt="features"/></div>
+                  <div class="features__descripton">
+                    <h3 class="features__title">Бесплатный ремонт</h3>
+                    <p class="features__text">Вам не нужно ехать в сервис, платить кучу денег, ждать. Через 5 рабочих дней проблема будет решена</p>
+                  </div>
+                </li>
+                <li class="features__item">
+                  <div class="features__pic"><img class="features__img" src="./img/icons/protect.png" alt="features"/></div>
+                  <div class="features__descripton">
+                    <h3 class="features__title">Страхование автомобиля</h3>
+                    <p class="features__text">Вам не нужно ехать в сервис, платить кучу денег, ждать. Через 5 рабочих дней проблема будет решена</p>
+                  </div>
+                </li>
+                <li class="features__item">
+                  <div class="features__pic"><img class="features__img" src="./img/icons/replay.png" alt="features"/></div>
+                  <div class="features__descripton">
+                    <h3 class="features__title">Бесплатный ремонт</h3>
+                    <p class="features__text">Вам не нужно ехать в сервис, платить кучу денег, ждать. Через 5 рабочих дней проблема будет решена</p>
+                  </div>
+                </li>
+      </ul>
+    </div>
+  </section>
+  <section class="price">
+    <div class="price__container">
+      <header class="price__header">
+        <h3 class="price__title">Тарифы на бизнес такси</h3>
+        <p class="price__text">Вы будете работать не больше 8 часов за день, а зарабатывать в 2-3 раза больше прежнего</p>
+      </header>
+      <ul class="price__list">
+                <li class="price__item">
+                  <h4 class="price__title">Каждая посадка</h4>
+                  <p class="price__text">Посадкой считается момент, когда пассажир сел в машину</p>
+                  <p class="price__price">от 299 руб.</p>
+                </li>
+                <li class="price__item">
+                  <h4 class="price__title">Каждый километр</h4>
+                  <p class="price__text">Приложение само считает километры</p>
+                  <p class="price__price">от 15 руб.</p>
+                </li>
+                <li class="price__item">
+                  <h4 class="price__title">Каждая минута</h4>
+                  <p class="price__text">Приложение само считает минуты</p>
+                  <p class="price__price">от 20 руб.</p>
+                </li>
+                <li class="price__item">
+                  <h4 class="price__title">Каждая минута</h4>
+                  <p class="price__text">Агрегатор может выплачивать бонусы</p>
+                  <p class="price__price">∞</p>
+                </li>
+      </ul>
+    </div>
+  </section>
+  <section class="gallery">
+    <div class="gallery__bg"></div>
+  </section>
+  <section class="conditions">
+    <header class="conditions__container">
+      <h3 class="conditions__title">Выберите любой подходящий вариант оплаты</h3>
+      <h4 class="conditions__variant">Стоимость аренды AUDI A6</h4>
+      <p class="conditions__complectation conditions__complectation--active">минимальная <b>3600р</b></p>
+      <p class="conditions__complectation">максимальная <b>4200р</b></p>
+      <ul class="conditions__list">
+                <li class="conditions__item">
+                  <div class="conditions__pic"><img src="./img/icons/arrow.png"/></div>
+                  <p class="conditions__text">Имеем в своём автопарке больше 200 машин</p>
+                </li>
+                <li class="conditions__item">
+                  <div class="conditions__pic"><img src="./img/icons/arrow.png"/></div>
+                  <p class="conditions__text">Работаем 3 года</p>
+                </li>
+                <li class="conditions__item">
+                  <div class="conditions__pic"><img src="./img/icons/arrow.png"/></div>
+                  <p class="conditions__text">Не тратимся на аренду нескольких офисов по всему городу</p>
+                </li>
+                <li class="conditions__item">
+                  <div class="conditions__pic"><img src="./img/icons/arrow.png"/></div>
+                  <p class="conditions__text">Делаем скидки и подарки</p>
+                </li>
+      </ul>
+      <div class="conditions__price-container">
+        <h3 class="conditions__price-title">Мы уделяем большое внимание сервису. Поэтому Вы можете оплатить аренду машину любым удобным способом</h3>
+        <ul class="conditions__features-list">
+                    <li class="conditions__features-item">
+                      <div class="conditions__features-pic"><img src="./img/icons/coin-stack.png"/></div>
+                      <p class="conditions__features-text">3700 руб. с предоплатой за 4 недели</p>
+                    </li>
+                    <li class="conditions__features-item">
+                      <div class="conditions__features-pic"><img src="./img/icons/protect2.png"/></div>
+                      <p class="conditions__features-text">4000 руб. с предоплатой за 1 неделю</p>
+                    </li>
+                    <li class="conditions__features-item">
+                      <div class="conditions__features-pic"><img src="./img/icons/lock.png"/></div>
+                      <p class="conditions__features-text">4600 руб. с пост оплатой</p>
+                    </li>
+        </ul>
+      </div>
+    </header>
+  </section>
+  <section class="call">
+    <div class="call__container">
+      <h1 class="hero__title">Арендуйте AUDI A6 для работы в бизнес такси</h1>
+      <p class="hero__text">Предоставим автомобиль, поможем пройти экзамены в агрегаторах, выведем на линию уже через 1 день.</p><a class="hero__link" href="#">Узнайте условия аренды</a>
+      <input class="hero__input" type="phone" placeholder="Введите телефон"/><a class="hero__link hero__link--button" href="#">Узнайте условия аренды Audi A6</a>
+    </div>
+  </section>
+  <section class="stages">
+    <div class="stages__container">
+      <header class="stages__title">Подключим к бизнес агрегаторам: Uber, Gett, Wheely, Яндекс</header>
+      <ul class="stages__list"></ul>
+            <li class="stages__item">
+              <h5 class="stages__step">шаг 1</h5>
+              <div class="stages__description">
+                <h6 class="stages__description-title">Поможем пройти экзамены</h6>
+                <p class="stages__text">Подготовим к экзаменам, расскажем про каждый вопрос, дадим правильные ответы</p>
+              </div>
+            </li>
+            <li class="stages__item">
+              <h5 class="stages__step">шаг 2</h5>
+              <div class="stages__description">
+                <h6 class="stages__description-title">У нас уже есть ИП и лицензия</h6>
+                <p class="stages__text">Вам не надо заморачиваться с ИП и лицензией. На каждом автомобиле всё это уже установлено</p>
+              </div>
+            </li>
+            <li class="stages__item">
+              <h5 class="stages__step">шаг 3</h5>
+              <div class="stages__description">
+                <h6 class="stages__description-title">Стабильные выплаты денег</h6>
+                <p class="stages__text">ез просрочки и скрытых комиссий. За это отвечаем головой</p>
+              </div>
+            </li>
+    </div>
+  </section>
+  <section class="info">
+    <div class="info__container">
+      <header class="info__main-title">237 водителей со всей Москвы <br><span>выбирают нас по объективным причинам</span></header>
+    </div>
+    <div class="info__list-container">
+      <ul class="info__list">
+                <li class="info__item">
+                  <div class="info__pic"><img src="./img/icons/coins.png"/></div>
+                  <div class="info__description">
+                    <h5 class="info__title">До трёх раз дешевле, чем у конкурентов</h5>
+                    <p class="info__text">Вам нужна машина не на 1 день, а на несколько недель. Мы предоставим минимальную цену за день</p><b class="info__question">Вывод: зачем переплачивать?</b>
+                  </div>
+                </li>
+                <li class="info__item">
+                  <div class="info__pic"><img src="./img/icons/instrument.png"/></div>
+                  <div class="info__description">
+                    <h5 class="info__title">Свой автосервис в центре Москвы</h5>
+                    <p class="info__text">Вам будет обеспечен бесплатный ремонт и плановые тех. осмотры</p><b class="info__question">Вывод: зачем переплачивать?</b>
+                  </div>
+                </li>
+                <li class="info__item">
+                  <div class="info__pic"><img src="./img/icons/repair.png"/></div>
+                  <div class="info__description">
+                    <h5 class="info__title">Возможность выкупа автомобиля</h5>
+                    <p class="info__text">Вы можете выкупить абсолютно новый автомобиль через 36 месяцев работы</p><b class="info__question">Вам не надо переплачивать 500 000 рублей</b>
+                  </div>
+                </li>
+                <li class="info__item">
+                  <div class="info__pic"><img src="./img/icons/card.png"/></div>
+                  <div class="info__description">
+                    <h5 class="info__title">Три варианта оплаты</h5>
+                    <p class="info__text">Выбирайте удобную схему сотрудничества: 7/0 ; 7/2</p><b class="info__question">Удобно планировать бюджет</b>
+                  </div>
+                </li>
+      </ul>
+    </div>
+  </section>
+  <section class="about">
+    <header class="about__container">
+      <h3 class="about__title">Компания Pragmatic</h3>
+      <p class="about__text">В нашей компании работают профессионалы, готовые Вам помочь в любое время суток</p>
+      <ul class="about__list">
+        <li class="about__item"><img class="about__img" src="./img/myjik2.png"/></li>
+        <li class="about__item"><img class="about__img" src="./img/myjik.png"/></li>
+        <li class="about__item"><img class="about__img" src="./img/baba.png"/></li>
+        <li class="about__item"><img class="about__img" src="./img/baba2.png"/></li>
+      </ul>
+      <div class="about__info">
+        <h3 class="about__info-title">Звоните или приезжайте к нам в офис</h3>
+        <p class="about__info-phone">Телефон <a tel="+7 (499) 404-01-86">+7 (499) 404-01-86 </a></p>
+        <p class="about__info-address">Адресе: 2 карачаровская, дом 47, офис 1</p>
+      </div>
+      <div class="about__map">
+        <div class="map"></div>
+      </div>
+    </header>
+  </section>
+  <div class="call call--nobg">
+    <h1 class="hero__title">Узнайте подробнее условия аренды AUDI A6</h1>
+    <p class="hero__text">Оставьте свой телефон. Через 1 минуту Вам перезвонит менеджер и раскажет все подробности</p>
+    <input class="hero__input" type="phone" placeholder="Введите телефон"/><a class="hero__link hero__link--button" href="#">Узнайте условия аренды Audi A6</a>
+  </div>
+  <footer class="site-footer">
+    <div class="logo"><img src="./img/logo.png"/></div>
+    <div class="phone"><img src="./img/icons/phone.png" alt="phone icon"/></div>
+  </footer>
 </body>
+<script src="scripts.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAInlJhaeejW5su7EzLziC6gjj66jLrtd4&amp;callback=initMap"></script>

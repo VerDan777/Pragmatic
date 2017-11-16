@@ -1,0 +1,81 @@
+.info {
+    // box model
+    padding: 0 25px;
+    padding-top: 60px;
+    background-image: url('./img/excellence-bg.png');
+    background-position: center center;
+    background-size: cover;
+
+
+    &__container {
+        text-align: center;
+        color: $white;
+        font-size: 1rem;
+        line-height: 1.5;
+
+        span {
+            font-size: 0.7em;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        display: flex;
+        // align-items: center;
+        padding-bottom: 50px;
+        // padding-right: 50px;
+    }
+
+    &__pic {
+        width: 64px;
+        margin-right: 15px;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__description {
+        color: $white;
+    }
+
+    &__main-title {
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: $Roboto;
+        font-weight: 100;
+    }
+
+    &__text {
+        font-family: $Roboto;
+        font-size: 0.8rem;
+        line-height: 2;
+    }
+
+    &__question {
+        display: block;
+        position: relative;
+        font-family: $Roboto;
+        font-size: 0.8rem;
+        line-height: 2;
+        font-weight: 300;
+
+        &::before {
+            content: '';
+            // position: absolute;
+            @include centerer;
+            left: -30px;
+            width: 40px;
+            height: 2px;
+            background: $white;
+            color: $white;
+        }
+    }
+}

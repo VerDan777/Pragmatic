@@ -1,0 +1,55 @@
+.stages {
+    padding: 0 25px;
+    background-image: url('./img/audi-a7.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 550px;
+
+    &__title {
+        color: $white;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    &__step {
+        color: #1691fa;
+        font-size: 2rem;
+        border-bottom: 1px solid $accent;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__title {
+        
+    }
+
+    &__description-title {
+        padding: 0;
+        color: $white;
+        font-family: $Roboto;
+        font-size: 1rem;
+    }
+
+    &__text {
+        color: $white;
+        font-family: $Roboto;
+        line-height: 1.5;
+        font-weight: 100;
+        font-size: 0.9rem;
+    }
+
+    &__description {
+        // display: flex;
+        // flex-direction: column;
+        padding-left: 30px;
+
+    }
+}

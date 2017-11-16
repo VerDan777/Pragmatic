@@ -1,0 +1,10 @@
+.gallery {
+
+    &__bg {
+        background-image: url('./img/audi-bg.png');
+        background-repeat: no-repeat;
+        height: 400px;
+        background-position: center center;
+        background-size: cover;
+    }
+}

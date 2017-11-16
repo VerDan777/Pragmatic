@@ -4,7 +4,155 @@ head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="normalize.css")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&amp;subset=cyrillic" rel="stylesheet")
     link(rel="stylesheet", href="styles.css")
-    title Document
+    title Главная
 body
-    h1 HELLO!!!
+    header.site-header
+        .main-nav
+            .logo: img(src="./img/logo.png" alt="main logo")
+            .phone: img(src="./img/icons/phone.png" alt="phone icon")
+
+        .hero
+            h1.hero__title Арендуйте AUDI A6 для работы в бизнес такси
+            p.hero__text Предоставим автомобиль, поможем пройти экзамены в агрегаторах, выведем на линию уже через 1 день.
+            a.hero__link(href="#") Узнайте условия аренды
+            .hero__group-input
+                input.hero__input(type="phone" placeholder="Введите свой телефон") 
+            - var car = ['Audi A6']
+                    a.hero__link.hero__link--button(href="#") Узнайте условия аренды #{car}
+    section.features
+        .features__container
+            ul.features__list
+                mixin feature(imgURl, title, text)
+                    li.features__item
+                            .features__pic
+                                img.features__img(src=imgURl alt="features")
+                            .features__descripton
+                                h3.features__title=title
+                                p.features__text=text
+                +feature('./img/icons/repair.png', 'Бесплатный ремонт','Вам не нужно ехать в сервис, платить кучу денег, ждать. Через 5 рабочих дней проблема будет решена')
+                +feature('./img/icons/protect.png', 'Страхование автомобиля','Вам не нужно ехать в сервис, платить кучу денег, ждать. Через 5 рабочих дней проблема будет решена')
+                +feature('./img/icons/replay.png', 'Бесплатный ремонт','Вам не нужно ехать в сервис, платить кучу денег, ждать. Через 5 рабочих дней проблема будет решена')
+    
+    section.price
+        .price__container
+            header.price__header
+                h3.price__title Тарифы на бизнес такси
+                p.price__text Вы будете работать не больше 8 часов за день, а зарабатывать в 2-3 раза больше прежнего
+            ul.price__list
+                mixin price(title, text, price)
+                    li.price__item
+                        h4.price__title=title
+                        p.price__text=text
+                        p.price__price=price
+                +price('Каждая посадка','Посадкой считается момент, когда пассажир сел в машину','от 299 руб.')
+                +price('Каждый километр','Приложение само считает километры', 'от 15 руб.')
+                +price('Каждая минута','Приложение само считает минуты', 'от 20 руб.')
+                +price('Каждая минута','Агрегатор может выплачивать бонусы', '∞')
+            
+    
+    section.gallery
+        .gallery__bg
+
+    section.conditions
+        header.conditions__container
+            h3.conditions__title Выберите любой подходящий вариант оплаты
+            h4.conditions__variant Стоимость аренды AUDI A6
+            p.conditions__complectation.conditions__complectation--active минимальная <b>3600р</b>
+            p.conditions__complectation максимальная <b>4200р</b>
+
+            ul.conditions__list
+                mixin conditions(iconURL, text)
+                    li.conditions__item
+                        .conditions__pic
+                            img(src=iconURL)
+                        p.conditions__text=text
+                +conditions('./img/icons/arrow.png','Имеем в своём автопарке больше 200 машин')
+                +conditions('./img/icons/arrow.png', 'Работаем 3 года')
+                +conditions('./img/icons/arrow.png', 'Не тратимся на аренду нескольких офисов по всему городу')
+                +conditions('./img/icons/arrow.png', 'Делаем скидки и подарки')
+            .conditions__price-container
+                h3.conditions__price-title Мы уделяем большое внимание сервису. Поэтому Вы можете оплатить аренду машину любым удобным способом
+                ul.conditions__features-list
+                    mixin features-conditions(iconURL, text)
+                        li.conditions__features-item
+                            .conditions__features-pic
+                                img(src=iconURL)
+                            p.conditions__features-text=text
+                    +features-conditions('./img/icons/coin-stack.png','3700 руб. с предоплатой за 4 недели')
+                    +features-conditions('./img/icons/protect2.png','4000 руб. с предоплатой за 1 неделю')
+                    +features-conditions('./img/icons/lock.png','4600 руб. с пост оплатой')
+        
+    section.call
+        .call__container
+            h1.hero__title Арендуйте AUDI A6 для работы в бизнес такси
+            p.hero__text Предоставим автомобиль, поможем пройти экзамены в агрегаторах, выведем на линию уже через 1 день.
+            a.hero__link(href="#") Узнайте условия аренды
+            input.hero__input(type="phone" placeholder="Введите телефон") 
+            - var car = ['Audi A6']
+                    a.hero__link.hero__link--button(href="#") Узнайте условия аренды #{car}
+
+    section.stages
+        .stages__container
+            header.stages__title Подключим к бизнес агрегаторам: Uber, Gett, Wheely, Яндекс
+            ul.stages__list
+            mixin stage(step, title, text)
+                li.stages__item
+                    h5.stages__step=step
+                    .stages__description
+                        h6.stages__description-title=title
+                        p.stages__text=text
+            +stage('шаг 1', 'Поможем пройти экзамены', 'Подготовим к экзаменам, расскажем про каждый вопрос, дадим правильные ответы')
+            +stage('шаг 2', 'У нас уже есть ИП и лицензия', 'Вам не надо заморачиваться с ИП и лицензией. На каждом автомобиле всё это уже установлено')
+            +stage('шаг 3', 'Стабильные выплаты денег', 'ез просрочки и скрытых комиссий. За это отвечаем головой')
+
+    section.info
+        .info__container
+            header.info__main-title 237 водителей со всей Москвы <br><span>выбирают нас по объективным причинам</span>
+        .info__list-container
+            ul.info__list
+                mixin info(iconURL, title, text, question)
+                    li.info__item
+                        .info__pic
+                            img(src=iconURL)
+                        .info__description
+                            h5.info__title=title
+                            p.info__text=text
+                            b.info__question=question
+                +info('./img/icons/coins.png', 'До трёх раз дешевле, чем у конкурентов', 'Вам нужна машина не на 1 день, а на несколько недель. Мы предоставим минимальную цену за день', 'Вывод: зачем переплачивать?')
+                +info('./img/icons/instrument.png', 'Свой автосервис в центре Москвы', 'Вам будет обеспечен бесплатный ремонт и плановые тех. осмотры', 'Вывод: зачем переплачивать?')
+                +info('./img/icons/repair.png', 'Возможность выкупа автомобиля', 'Вы можете выкупить абсолютно новый автомобиль через 36 месяцев работы', 'Вам не надо переплачивать 500 000 рублей')
+                +info('./img/icons/card.png', 'Три варианта оплаты', 'Выбирайте удобную схему сотрудничества: 7/0 ; 7/2', 'Удобно планировать бюджет')
+
+
+    section.about
+        header.about__container
+            h3.about__title Компания Pragmatic
+            p.about__text В нашей компании работают профессионалы, готовые Вам помочь в любое время суток
+            ul.about__list
+                - var we = ['./img/myjik2.png','./img/myjik.png', './img/baba.png', './img/baba2.png']
+                    each item,key in we
+                        li.about__item: img.about__img(src=we[key])
+            .about__info
+                h3.about__info-title Звоните или приезжайте к нам в офис
+                p.about__info-phone Телефон <a tel="+7 (499) 404-01-86">+7 (499) 404-01-86 </a>
+                p.about__info-address Адресе: 2 карачаровская, дом 47, офис 1
+            
+            .about__map
+                .map
+
+    .call.call--nobg
+        h1.hero__title Узнайте подробнее условия аренды AUDI A6
+        p.hero__text Оставьте свой телефон. Через 1 минуту Вам перезвонит менеджер и раскажет все подробности
+        input.hero__input(type="phone" placeholder="Введите телефон") 
+        - var car = ['Audi A6']
+                a.hero__link.hero__link--button(href="#") Узнайте условия аренды #{car}
+    footer.site-footer
+            .logo: img(src="./img/logo.png")
+            .phone: img(src="./img/icons/phone.png" alt="phone icon")
+
+            
+script(src="scripts.js")
+script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAInlJhaeejW5su7EzLziC6gjj66jLrtd4&callback=initMap")
