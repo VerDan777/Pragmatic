@@ -1,0 +1,18 @@
+.call {
+    // box model
+    padding: 0 25px;
+    background-color: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-image: url('./img/application.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &--nobg {
+        background-image: none;
+        background-color: #000;
+        border-bottom: 1px solid #333333;
+        padding-bottom: 20px;
+    }
+} 

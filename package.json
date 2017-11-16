@@ -34,6 +34,7 @@
     "sass-module-importer": "^1.4.0"
   },
   "dependencies": {
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^7.0.0",
+    "normalize.scss": "^0.1.0"
   }
 }

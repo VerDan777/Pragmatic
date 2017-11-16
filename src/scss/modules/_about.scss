@@ -1,0 +1,45 @@
+.about {
+    // box model
+    padding: 0 25px;
+    background-image: url('./img/taxi.png');
+    background-position: center center;
+    background-size: cover;
+
+    &__container {
+        padding-top: 60px;
+        text-align: center;
+        color: $white;
+    }
+
+    &__text {
+        text-align: left;
+        line-height: 1.5;
+    }
+
+    &__title {
+        margin: 0;
+        padding-bottom: 25px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__info-title {
+        text-align: left;
+        padding-bottom: 25px;
+        border-bottom: 2px solid $white;
+    }
+
+    &__info-phone {
+        text-align: left;
+    }
+    &__info-address {
+        text-align: left;        
+    }
+
+    &__list {
+        display: flex;
+    }
+}
